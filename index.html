@@ -10,19 +10,25 @@
       rel="stylesheet"
     />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/css/modern-normalize.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <!-- <div class="box"> div-->
+        <div class="nav-container">
         <nav>
-          <div>
-            <a class="logo" href="#">
-              <span lang="en" class="logo-blue">Web</span>Studio
-            </a>
-          </div>
+          <a class="logo" href="#">
+            <span lang="en" class="logo-blue">Web</span>Studio
+          </a>
+
           <ul class="site-nav">
             <li class="site-nav-studio-1"><a href="#">Студия</a></li>
 
@@ -32,12 +38,12 @@
 
             <li><a href="#">Контакты</a></li>
           </ul>
-
-          <ul class="auth-nav">
-            <li><a href="mailo:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
         </nav>
+        <ul class="auth-nav">
+          <li><a href="mailo:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
       </div>
     </header>
     <main>
@@ -51,8 +57,9 @@
         </div>
       </section>
       <!----section 2---->
-      <div class="container">
-        <section class="list">
+
+      <section class="list">
+        <div class="container">
           <ul class="text-list">
             <li>
               <h3>Внимание к деталям</h3>
@@ -83,11 +90,13 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!----section 3---->
-      <div class="container">
-        <section>
+
+      <section>
+        <div class="container">
           <h2 class="do">Чем мы занимаемся</h2>
           <ul class="do-img">
             <li>
@@ -115,8 +124,9 @@
               />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!----section 4---->
 
       <section class="command">
@@ -125,32 +135,40 @@
           <ul class="command-img">
             <li>
               <img src="./img/Igor.jpg" alt="Igor" width="270px" />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <div class="personal-info">
+                <h3>Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+              </div>
             </li>
             <li>
               <img src="./img/Olga.jpg" alt="Olga" width="270px" />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <div class="personal-info">
+                <h3>Ольга Репина</h3>
+                <p>Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img src="./img/nikolay.jpg" alt="nikolay" width="270px" />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <div class="personal-info">
+                <h3>Николай Тарасов</h3>
+                <p>Marketing</p>
+              </div>
             </li>
 
             <li>
               <img src="./img/Michael.jpg" alt="Michael" width="270px" />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <div class="personal-info">
+                <h3>Михаил Ермаков</h3>
+                <p>UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="bg-footer">
-      <div class="container test">
-        <a class="logo" href="#"
+      <div class="container">
+        <a class="logo-footer" href="#"
           ><span class="logo-blue">Web</span
           ><span class="logo-white">Studio</span>
         </a>
