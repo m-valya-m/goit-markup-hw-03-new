@@ -156,6 +156,10 @@ header {
   color: var(--black);
 }
 
+.hidden {
+  display: none;
+}
+
 .bg-title {
   font-size: 44px;
   line-height: 60px;
@@ -168,28 +172,10 @@ header {
   margin-bottom: 30px;
 }
 
-.hidden {
-  display: none;
-}
-
-.bg {
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.bg-footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.bg-btn {
-  margin: 0 auto;
-  width: 200px;
-}
-
 .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   color: rgba(255, 255, 255, 1);
   background-color: var(--blue);
   border: none;
@@ -202,6 +188,28 @@ header {
   padding: 10px 32px;
   box-shadow: 0px 4px 4 x rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  text-align: center;
+}
+.bg {
+  background-color: #2f303a;
+  background-image: rgba(47, 48, 58, 0.4);
+  opacity: 0.4;
+  background-image: url("../img/Img-bg.jpg");
+  background-repeat: no-repeat;
+  background: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .btn-portfolio-section {
@@ -210,12 +218,10 @@ header {
   margin-bottom: 50px;
 }
 
-.btn-portfolio-section li {
-  margin-left: 8px;
-}
 .btn-portfolio-section:not(:last-child) {
   margin-right: 0px;
 }
+
 .btn-portfolio {
   border: none;
   font-weight: 500;
@@ -251,6 +257,9 @@ header {
   background: var(--blue);
 }
 
+.item-bottom {
+  margin-bottom: 0;
+}
 .item h3 {
   margin-bottom: 4px;
 }
@@ -274,7 +283,6 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-
   margin-top: 10px;
 }
 
@@ -309,7 +317,7 @@ h2 {
 .command {
   background: #f5f4fa;
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .command h3 {
@@ -340,10 +348,12 @@ h2 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .personal-info {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -387,15 +397,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .card-content {
   padding: 20px 24px 20px 24px;
   border: 30px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
+
 .desc-groups-one {
   display: flex;
   justify-content: space-between;
 }
+
 .address {
   color: #ffffff;
   font-style: normal;
