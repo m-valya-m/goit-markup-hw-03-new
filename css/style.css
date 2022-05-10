@@ -212,10 +212,6 @@ header {
   margin-bottom: 50px;
 }
 
-.btn-portfolio-section:not(:last-child) {
-  margin-right: 0px;
-}
-
 .btn-portfolio {
   border: none;
   font-weight: 500;
@@ -224,13 +220,17 @@ header {
   color: var(--black);
   cursor: pointer;
   font-family: inherit;
-  margin-right: 8px;
+
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
 }
 
-.btn-portfolio:last-child {
-  margin: 0px;
+.btn-portfolio-section li {
+  margin-right: 8px;
+}
+
+.btn-portfolio-section li:last-child {
+  margin-right: 0px;
 }
 
 .btn-portfolio:hover,
